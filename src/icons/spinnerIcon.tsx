@@ -1,0 +1,274 @@
+import { SVGProps, Ref, forwardRef } from "react";
+
+const SvgSpinnericon = (
+  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  ref: Ref<SVGSVGElement>
+) => (
+  <svg
+    width={props.size}
+    height={props.size}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 100 100"
+    preserveAspectRatio="xMidYMid"
+    className="spinner_icon_svg__uil-default"
+    ref={ref}
+    {...props}
+  >
+    <path fill="none" className="spinner_icon_svg__bk" d="M0 0h100v100H0z" />
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="translate(0 -30)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-1s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(25.714 115.72 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.9285714285714286s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(51.429 81.148 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.8571428571428571s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(77.143 68.81 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.7857142857142857s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(102.857 61.962 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.7142857142857143s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(128.571 57.224 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.6428571428571429s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(154.286 53.424 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.5714285714285714s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(180 50 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.5s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(-154.286 46.576 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.42857142857142855s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(-128.571 42.776 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.35714285714285715s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(-102.857 38.038 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.2857142857142857s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(-77.143 31.19 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.21428571428571427s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(-51.429 18.852 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.14285714285714285s"
+        repeatCount="indefinite"
+      />
+    </rect>
+    <rect
+      x={47}
+      y={40}
+      width={6}
+      height={20}
+      rx={3}
+      ry={3}
+      transform="rotate(-25.714 -15.72 65)"
+    >
+      <animate
+        attributeName="opacity"
+        from={1}
+        to={0}
+        dur="1s"
+        begin="-0.07142857142857142s"
+        repeatCount="indefinite"
+      />
+    </rect>
+  </svg>
+);
+
+const ForwardRef = forwardRef(SvgSpinnericon);
+export default ForwardRef;
