@@ -1,6 +1,6 @@
 {
   "name": "@felixsebastian/koan",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Koan design system",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -36,8 +36,8 @@
     "typescript": "^4.6.3"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "dependencies": {
     "@capsizecss/core": "^3.0.0",
@@ -47,7 +47,7 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@popperjs/core": "^2.11.6",
-    "@specimen/foundation": "^0.1.7",
+    "@specimen/foundation": "^0.1.8",
     "@types/lodash": "^4.14.184",
     "date-fns": "^2.29.2",
     "eslint": "^8.23.0",
