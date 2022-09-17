@@ -1,5 +1,5 @@
 {
-  "name": "@felixsebastian/koan",
+  "name": "koan-design",
   "version": "0.1.10",
   "description": "Koan design system",
   "main": "./lib/cjs/index.js",
