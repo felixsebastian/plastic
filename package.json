@@ -1,6 +1,6 @@
 {
   "name": "koan-design",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Koan design system",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -8,6 +8,7 @@
   "files": [
     "lib"
   ],
+  "sideEffects": false,
   "scripts": {
     "test": "jest",
     "build": "rm -rf lib && npm run build:esm && npm run build:cjs",
