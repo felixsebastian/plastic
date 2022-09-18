@@ -15,8 +15,8 @@ const Divider = (props: Props) => {
     color = "gray300";
     opacity = 1;
   } else {
-    opacity = lod ? 1 / 10 : 1;
-    color = lod ? "white" : "gray200";
+    opacity = 1 / 10;
+    color = lod ? "white" : "gray600";
   }
 
   return (
