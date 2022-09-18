@@ -32,7 +32,7 @@ const Badge = (props: Props) => {
     <Box bg={bg} p="sm" radius="md" css={css({ minWidth: s.sm })}>
       <Center>
         <Text
-          size="sm2"
+          size="xs"
           color={props.active ? "white" : "text"}
           weight="semiBold"
         >
