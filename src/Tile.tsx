@@ -11,9 +11,9 @@ interface Props {
 }
 
 const Tile = ({ subheading, ...props }: Props) => (
-  <Card p="lg" pt="lg2" bg={props.bg}>
+  <Card p="lg" pt="xl" bg={props.bg}>
     <Stack alignX="center">
-      <Text size="lg3" weight="bold">
+      <Text size="2xl" weight="bold">
         {props.heading}
       </Text>
       {subheading && (

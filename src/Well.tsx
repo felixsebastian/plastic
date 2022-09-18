@@ -20,7 +20,7 @@ const Well = ({ color = "blue", ...props }: Props, ref: Ref<HTMLElement>) => {
       radius="sm"
       {...props}
       css={css`
-        border: ${s.sm3} solid ${c[color + "300"]};
+        border: ${s.xxs} solid ${c[color + "300"]};
       `}
     >
       {props.children}

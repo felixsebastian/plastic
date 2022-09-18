@@ -23,9 +23,9 @@ const useActiveCss = () => {
         top: 0;
         left: 0;
         right: 0;
-        height: ${s.sm2};
-        border-bottom-left-radius: ${s.sm2};
-        border-bottom-right-radius: ${s.sm2};
+        height: ${s.xs};
+        border-bottom-left-radius: ${s.xs};
+        border-bottom-right-radius: ${s.xs};
       }
     `,
     button: css`
@@ -101,7 +101,7 @@ const Nav = () => {
         <Inline alignY="center">
           <NavButton icon="Question">Help</NavButton>
           <NavButton icon="Notification" />
-          <Inline gap="sm2">
+          <Inline gap="xs">
             <Avatar name="Jane Doe" size="md" />
             <Avatar name="Culture Amp" size="md" />
           </Inline>

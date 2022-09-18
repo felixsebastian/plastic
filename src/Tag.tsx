@@ -14,7 +14,7 @@ const Tag = ({ children, handleClear, ...props }: Props) => {
 
   if (handleClear) {
     return (
-      <Chip py="none" pr="sm2" {...props}>
+      <Chip py="none" pr="xs" {...props}>
         <Inline alignY="center" gap="sm">
           <Box py="sm">
             <Text size="sm">{children}</Text>

@@ -35,7 +35,7 @@ const GlobalNotification = ({ children, mood = "informative" }: Props) => {
     >
       <LightOnDarkProvider value={false}>
         <Box p="sm" radius="sm" bg={moods[mood].iconColor}>
-          <Icon id={moods[mood].icon} size="lg3" color="white" />
+          <Icon id={moods[mood].icon} size="2xl" color="white" />
         </Box>
         <Inline
           alignY="center"

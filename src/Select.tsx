@@ -46,7 +46,7 @@ const MultiValue = (props: MultiValueProps) => {
       handleClear={props.removeProps.onClick as any}
       css={css`
         & + & {
-          margin-left: ${s.sm2};
+          margin-left: ${s.xs};
         }
       `}
     >

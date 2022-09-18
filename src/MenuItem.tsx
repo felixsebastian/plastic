@@ -55,7 +55,7 @@ const MenuItem = ({ icon, destructive, children, ...props }: Props) => {
             icon && (
               <Icon
                 id={icon}
-                size="lg2"
+                size="xl"
                 color="currentColor"
                 css={css`
                   color: ${destructive ? c.red600 : c.gray600};

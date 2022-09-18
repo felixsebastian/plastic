@@ -1,6 +1,6 @@
 {
   "name": "koan-design",
-  "version": "0.1.12",
+  "version": "1.0.0",
   "description": "Koan design system",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -48,7 +48,7 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@popperjs/core": "^2.11.6",
-    "@specimen/foundation": "^0.1.8",
+    "@specimen/foundation": "^1.0.0",
     "@types/lodash": "^4.14.184",
     "date-fns": "^2.29.2",
     "eslint": "^8.23.0",

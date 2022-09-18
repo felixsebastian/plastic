@@ -11,11 +11,11 @@ export const getOutlineBoxProps = (
     position: "absolute",
     background: "transparent",
     borderRadius: size("sm").raw + 2,
-    border: `${s.sm3} solid ${c[light ? "blue300" : "outline"]}`,
-    top: (size("sm3").raw + 1) * -1,
-    left: (size("sm3").raw + 1) * -1,
-    right: (size("sm3").raw + 1) * -1,
-    bottom: (size("sm3").raw + 1) * -1,
+    border: `${s.xxs} solid ${c[light ? "blue300" : "outline"]}`,
+    top: (size("2xs").raw + 1) * -1,
+    left: (size("2xs").raw + 1) * -1,
+    right: (size("2xs").raw + 1) * -1,
+    bottom: (size("2xs").raw + 1) * -1,
   };
 };
 

@@ -10,15 +10,15 @@ const getInitials = (name: string) => {
 const sizes = {
   sm: {
     box: "lg",
-    text: "sm3",
+    text: "2xs",
   },
   md: {
-    box: "lg3",
+    box: "xxl",
     text: "sm",
   },
   lg: {
-    box: "lg5",
-    text: "lg2",
+    box: "4xl",
+    text: "xl",
   },
 };
 
@@ -37,7 +37,7 @@ const Avatar = (props: Props) => {
       h={sizes[props.size].box as any}
       css={css`
         border-radius: 50%;
-        box-shadow: 0 0 0 ${s.sm3} ${c.gray200} inset;
+        box-shadow: 0 0 0 ${s.xxs} ${c.gray200} inset;
       `}
     >
       <Center>

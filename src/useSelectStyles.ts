@@ -19,7 +19,7 @@ const useSelectStyles = (variant: Variant, width?: string): StylesConfig => {
   const variantShadows: Record<Variant, string> = {
     light: "none",
     ghost: "none",
-    normal: `0 0 0 ${s.sm3} ${c.gray500} inset`,
+    normal: `0 0 0 ${s.xxs} ${c.gray500} inset`,
   };
 
   const variantBackgrounds: Record<Variant, string> = {
@@ -68,7 +68,7 @@ const useSelectStyles = (variant: Variant, width?: string): StylesConfig => {
         ? variantBackgroundsHover[variant]
         : variantBackgrounds[variant],
       padding: `0 ${s.md}`,
-      height: s.lg3,
+      height: s.xxl,
       "&:hover": {
         background: variantBackgroundsHover[variant],
       },

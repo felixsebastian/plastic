@@ -11,24 +11,24 @@ const OverviewCard = (props: any) => (
         </Text>
         <Inline alignY="center" gap="md">
           <Text>Camp</Text>
-          <Inline gap="sm2" alignY="center">
+          <Inline gap="xs" alignY="center">
             <Icon id="User" />
             <Text>4</Text>
           </Inline>
         </Inline>
       </Stack>
       <Inline alignY="bottom" gap="none">
-        <Text size="lg12" weight="bold">
+        <Text size="11xl" weight="bold">
           97
         </Text>
-        <Text size="lg3">%</Text>
+        <Text size="2xl">%</Text>
       </Inline>
       <Inline alignY="center" gap="sm">
-        <Inline gap="sm2" alignY="center">
+        <Inline gap="xs" alignY="center">
           <Icon id="DeltaPositive" color="favorable" />
           <Text size="sm">22% increase</Text>
         </Inline>
-        <Inline gap="sm2" alignY="center">
+        <Inline gap="xs" alignY="center">
           <Icon id="ArrowUp" color="favorable" />
           <Text size="sm">3% from benchmark</Text>
         </Inline>

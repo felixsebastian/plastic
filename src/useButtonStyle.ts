@@ -19,8 +19,8 @@ const useButtonStyle = (style = "normal") => {
       color: undefined,
       bg: "white",
       bgHover: "gray200",
-      shadow: `0 0 0 ${s.sm3} ${c.gray500} inset`,
-      shadowHover: `0 0 0 ${s.sm3} ${c.purple800} inset`,
+      shadow: `0 0 0 ${s.xxs} ${c.gray500} inset`,
+      shadowHover: `0 0 0 ${s.xxs} ${c.purple800} inset`,
       weight: "bold",
     },
     strong: {
@@ -54,8 +54,8 @@ const useButtonStyle = (style = "normal") => {
       color: "white",
       bg: color("white").rgba(0.2),
       bgHover: color("white").rgba(0.23),
-      shadow: `0 0 0 ${s.sm3} ${color("white").rgba(0.4)} inset`,
-      shadowHover: `0 0 0 ${s.sm3} ${color("white").rgba(0.8)} inset`,
+      shadow: `0 0 0 ${s.xxs} ${color("white").rgba(0.4)} inset`,
+      shadowHover: `0 0 0 ${s.xxs} ${color("white").rgba(0.8)} inset`,
       weight: "bold",
     },
     ghost: {

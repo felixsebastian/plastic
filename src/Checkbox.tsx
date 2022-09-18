@@ -24,14 +24,14 @@ const Control = ({ state, ...props }: any) => {
           align-items: center;
           justify-content: center;
           border: none;
-          box-shadow: 0 0 0 ${s.sm3} ${c.gray500} inset;
+          box-shadow: 0 0 0 ${s.xxs} ${c.gray500} inset;
           outline-offset: 1px;
           cursor: pointer;
           &:hover {
-            box-shadow: 0 0 0 ${s.sm3} ${c.purple800} inset;
+            box-shadow: 0 0 0 ${s.xxs} ${c.purple800} inset;
           }
           &:focus-visible {
-            outline: ${s.sm3} solid ${c.outline};
+            outline: ${s.xxs} solid ${c.outline};
           }
         `,
         state !== "OFF" &&
@@ -42,8 +42,8 @@ const Control = ({ state, ...props }: any) => {
           `
       )}
     >
-      {state === "ON" && <Icon size="lg2" color="white" id="Check" />}
-      {state === "MIXED" && <Icon size="lg2" color="white" id="Minus" />}
+      {state === "ON" && <Icon size="xl" color="white" id="Check" />}
+      {state === "MIXED" && <Icon size="xl" color="white" id="Minus" />}
       <input
         id={props.id}
         tabIndex={-1}

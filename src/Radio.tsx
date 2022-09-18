@@ -13,7 +13,7 @@ const Control = ({ state, ...props }: any) => {
       as="button"
       type="button"
       bg="white"
-      radius="lg2"
+      radius="xl"
       d="flex"
       w="lg"
       h="lg"
@@ -22,14 +22,14 @@ const Control = ({ state, ...props }: any) => {
         align-items: center;
         justify-content: center;
         border: none;
-        box-shadow: 0 0 0 ${s.sm3} ${c.gray500} inset;
+        box-shadow: 0 0 0 ${s.xxs} ${c.gray500} inset;
         outline-offset: 1px;
         cursor: pointer;
         &:hover {
-          box-shadow: 0 0 0 ${s.sm3} ${c.purple800} inset;
+          box-shadow: 0 0 0 ${s.xxs} ${c.purple800} inset;
         }
         &:focus-visible {
-          outline: ${s.sm3} solid ${c.outline};
+          outline: ${s.xxs} solid ${c.outline};
         }
       `}
     >

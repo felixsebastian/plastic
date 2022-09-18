@@ -31,7 +31,7 @@ const Notification = ({ title, children, mood = "informative" }: Props) => {
       radius="sm"
       d="flex"
       css={css`
-        border: ${s.sm3} solid ${c[moods[mood].borderColor]};
+        border: ${s.xxs} solid ${c[moods[mood].borderColor]};
         align-items: flex-start;
         gap: ${s.md};
       `}

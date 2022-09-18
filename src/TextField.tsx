@@ -156,7 +156,7 @@ const TextField = ({
         radius="sm"
         p="md"
         w="full"
-        h="lg3"
+        h="2xl"
         disabled={disabled}
         {...props}
         className={`${props.className} ${lod ? " lod" : ""}`}
@@ -164,7 +164,7 @@ const TextField = ({
           display: block;
           color: ${c[lod ? "white" : "text"]};
           border: none;
-          box-shadow: 0 0 0 ${s.sm3} ${c[boxShadowColor]} inset;
+          box-shadow: 0 0 0 ${s.xxs} ${c[boxShadowColor]} inset;
           font-family: ${fonts[defaultFont].name};
           font-size: 1.1rem;
           outline: none;

@@ -17,7 +17,7 @@ const RadioList = (props: Props) => {
   const name = nanoid();
 
   return (
-    <Stack gap="sm2">
+    <Stack gap="xs">
       {props.items.map(({ value, ...item }) => (
         <Radio
           {...props}

@@ -16,13 +16,13 @@ const DatePicker: ForwardRefRenderFunction<HTMLElement> = (_, ref: any) => {
       <Global
         styles={css`
           :root {
-            --rdp-cell-size: ${s.lg2};
+            --rdp-cell-size: ${s.xl};
             --rdp-accent-color: ${c.blue500};
             --rdp-background-color: ${c.white};
             --rdp-accent-color-dark: ${c.blue500};
             --rdp-background-color-dark: ${c.white};
-            --rdp-outline: ${s.sm3} solid ${c.outline};
-            --rdp-outline-selected: ${s.sm3} solid ${c.blue300};
+            --rdp-outline: ${s.xxs} solid ${c.outline};
+            --rdp-outline-selected: ${s.xxs} solid ${c.blue300};
           }
 
           .rdp-root {

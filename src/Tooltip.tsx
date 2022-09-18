@@ -44,7 +44,7 @@ const Tooltip = ({ color = "blue", ...props }: Props) => {
         {
           name: "offset",
           options: {
-            offset: [0, size("md").raw / 2 + size("sm3").raw],
+            offset: [0, size("md").raw / 2 + size("2xs").raw],
           },
         },
         {
@@ -114,10 +114,10 @@ const Tooltip = ({ color = "blue", ...props }: Props) => {
               height: ${s.md};
               width: ${s.md};
               background-color: ${c[color + "100"]};
-              border: ${s.sm3} solid ${c[color + "300"]};
+              border: ${s.xxs} solid ${c[color + "300"]};
               clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
               transform: rotate(${arrowRotations[placement as Placement]});
-              border-radius: 0 0 0 ${s.sm2};
+              border-radius: 0 0 0 ${s.xs};
             `}
           />
         </div>

@@ -13,18 +13,18 @@ const TextArea = (props: Props) => {
       radius="sm"
       p="md"
       w="full"
-      h="lg8"
+      h="8xl"
       {...props}
       css={css`
         border: none;
-        box-shadow: 0 0 0 ${s.sm3} ${c.gray500} inset;
+        box-shadow: 0 0 0 ${s.xxs} ${c.gray500} inset;
         font-family: ${fonts[defaultFont].name};
         font-size: 1.1rem;
         &:hover {
           background: ${c.gray100};
         }
         &:focus-visible {
-          outline: ${s.sm3} solid ${c.outline};
+          outline: ${s.xxs} solid ${c.outline};
           outline-offset: 1px;
         }
       `}

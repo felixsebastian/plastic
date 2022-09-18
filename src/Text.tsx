@@ -8,4 +8,5 @@ const Text = (props: PropsOf<typeof SpecimenText>, ref: Ref<HTMLElement>) => {
   return <SpecimenText ref={ref} color={lod ? "white" : "text"} {...props} />;
 };
 
+// eslint-disable-line
 export default forwardRef(Text);
