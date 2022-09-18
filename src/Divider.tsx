@@ -25,7 +25,7 @@ const Divider = (props: Props) => {
       css={css`
         margin: 0;
         border-width: 0;
-        border-top: ${props.type === "menu" ? s.xxxs : s.xs} solid;
+        border-top: ${props.type === "menu" ? s.xxxs : s.xxs} solid;
         border-color: ${c.gray200};
         border-color: ${theme.color(color).rgba(opacity)};
       `}
