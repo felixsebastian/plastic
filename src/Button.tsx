@@ -4,12 +4,13 @@ import Text from "./Text";
 import ButtonBox from "./ButtonBox";
 import Icon, { Icon as IconId } from "./Icon";
 import useButtonStyle from "./useButtonStyle";
+import ButtonVariant from "./ButtonVariant";
 
 export interface Props extends BoxProps {
   children: string;
   icon?: string | ReactNode;
   iconPosition?: "left" | "right";
-  variant?: string;
+  variant?: ButtonVariant;
 }
 
 const Button = (

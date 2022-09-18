@@ -1,5 +1,6 @@
 import { useTheme } from "@specimen/foundation";
 import useLightOnDark from "./useLightOnDark";
+import ButtonVariant from "./ButtonVariant";
 
 interface Style {
   color: any;
@@ -14,7 +15,7 @@ const useButtonStyle = (style = "normal") => {
   const lod = useLightOnDark();
   const { c, s, color } = useTheme();
 
-  const lut: Record<string, Style> = {
+  const lut: Record<ButtonVariant, Style> = {
     normal: {
       color: undefined,
       bg: "white",
