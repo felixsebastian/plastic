@@ -18,7 +18,7 @@ const ButtonBox = ({ variant, ...props }: Props, ref: Ref<HTMLElement>) => {
       ref={ref}
       px="lg"
       bg={styleProps.bg ?? "transparent"}
-      h="2xs"
+      h="2xl"
       radius="sm"
       d="flex"
       {...props}
