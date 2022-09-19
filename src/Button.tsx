@@ -14,7 +14,7 @@ export interface Props extends BoxProps {
 }
 
 const Button = (
-  { icon, iconPosition = "right", ...props }: Props,
+  { icon, iconPosition = "left", ...props }: Props,
   ref: Ref<HTMLElement>
 ) => {
   const { color, weight } = useButtonStyle(props.variant);
