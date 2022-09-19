@@ -1,9 +1,7 @@
 import { css, jsx } from "@emotion/react";
 import { Stack, useTheme } from "@specimen/foundation";
 import {
-  Component,
   ComponentProps,
-  FC,
   forwardRef,
   JSXElementConstructor,
   MutableRefObject,

@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { Box, Inline, Text, TextProps, useTheme } from "@specimen/foundation";
+import { Box, Inline, Text, TextStyle, useTheme } from "@specimen/foundation";
 import Icon from "./Icon";
 import { nanoid } from "nanoid";
 
@@ -49,7 +49,7 @@ const Control = ({ state, ...props }: any) => {
 export interface Props {
   state: boolean;
   label: string;
-  labelProps?: TextProps;
+  labelProps?: TextStyle;
 }
 
 const Radio = ({ state, label, ...props }: any) => {

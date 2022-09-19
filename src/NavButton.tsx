@@ -1,5 +1,4 @@
-import { css } from "@emotion/react";
-import { Center, Inline, Text, useTheme } from "@specimen/foundation";
+import { Inline, Text, useTheme } from "@specimen/foundation";
 import { forwardRef, Ref } from "react";
 import ButtonBox from "./ButtonBox";
 import Icon from "./Icon";

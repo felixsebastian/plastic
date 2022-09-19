@@ -74,7 +74,7 @@ const Select = (props: Props, ref: Ref<any>) => {
   const lod = useLightOnDark();
   const variant = props.variant ?? (lod ? "light" : "normal");
   const styles = useSelectStyles(variant, props.width);
-  const { s, c } = useTheme();
+  const { size, c } = useTheme();
 
   return (
     <VariantProvider value={variant}>
@@ -83,7 +83,7 @@ const Select = (props: Props, ref: Ref<any>) => {
           styles={styles}
           theme={(theme) => ({
             ...theme,
-            borderRadius: s.sm,
+            borderRadius: size("sm").raw,
             colors: {
               ...theme.colors,
               primary25: c.blue100,

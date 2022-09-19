@@ -10,12 +10,6 @@ const useSelectStyles = (variant: Variant, width?: string): StylesConfig => {
   const theme = useTheme();
   const { s, c, size, fontSize, color, shadow } = theme;
 
-  const variantFocusOutlines: Record<Variant, string> = {
-    light: "blue300",
-    ghost: "outline",
-    normal: "outline",
-  };
-
   const variantShadows: Record<Variant, string> = {
     light: "none",
     ghost: "none",
@@ -118,7 +112,7 @@ const useSelectStyles = (variant: Variant, width?: string): StylesConfig => {
         fontMetrics,
       }),
     }),
-    option: (provided, state) => ({
+    option: (provided) => ({
       ...provided,
       padding: s.md,
       borderRadius: s.sm,

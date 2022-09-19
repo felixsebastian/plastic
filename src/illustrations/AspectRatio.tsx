@@ -1,6 +1,5 @@
 import { css } from "@emotion/react";
 import { Box, BoxProps } from "@specimen/foundation";
-import { ReactNode } from "react";
 
 const landscape = css`
   aspect-ratio: 4/3;

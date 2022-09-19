@@ -19,9 +19,9 @@ const SvgDeltaWhiteicon = (
         id="delta-white_icon_svg__a"
       />
     </defs>
-    <g fill="none" fillRule="evenodd">
+    <g fill="none">
       <use fill={props.fill} xlinkHref="#delta-white_icon_svg__a" />
-      <path fill="#FFF" d="m10 5.37-5.018 8.028h10.036z" />
+      <path fill={props.fill} d="m10 5.37-5.018 8.028h10.036z" />
       <path fill={props.fill} d="M12.131 11.771H7.87L10 8.36z" />
     </g>
   </svg>

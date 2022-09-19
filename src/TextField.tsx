@@ -37,48 +37,44 @@ const useHintColor = (disabled: boolean) => {
 
 const useBoxShadowColor = (disabled: boolean, state: State) => {
   const lod = useLightOnDark();
-  const { color } = useTheme();
+  const { c, color } = useTheme();
 
   if (!disabled) {
     switch (state) {
       case "normal":
       case "positive":
         if (lod) return color("white").rgba(0.6);
-        return "gray500";
+        return c.gray500;
       case "negative":
-        if (lod) return color("red300");
-        return "red500";
+        if (lod) return c.red300;
+        return c.red500;
       case "cautionary":
-        if (lod) return color("yellow300");
-        return "yellow600";
+        if (lod) return c.yellow300;
+        return c.yellow600;
     }
   } else {
     if (lod) return color("white").rgba(0.2);
-    return "gray400";
+    return c.gray400;
   }
 };
 
 const useMessageBgColor = (state: State) => {
   const lod = useLightOnDark();
 
-  if (state === "negative") {
-    if (lod) return "red300";
-    return "red100";
-  } else if (state === "cautionary") {
+  if (state === "cautionary") {
     if (lod) return "yellow400";
     return "yellow100";
   }
+
+  if (lod) return "red300";
+  return "red100";
 };
 
 const useMessageIconColor = (state: State) => {
   const lod = useLightOnDark();
   if (lod) return "text";
-
-  if (state === "negative") {
-    return "red500";
-  } else if (state === "cautionary") {
-    return "yellow500";
-  }
+  if (state === "cautionary") return "yellow500";
+  return "red500";
 };
 
 interface NoMessageProps {
@@ -164,7 +160,7 @@ const TextField = ({
           display: block;
           color: ${c[lod ? "white" : "text"]};
           border: none;
-          box-shadow: 0 0 0 ${s.xxs} ${c[boxShadowColor]} inset;
+          box-shadow: 0 0 0 ${s.xxs} ${boxShadowColor} inset;
           font-family: ${fonts[defaultFont].name};
           font-size: 1.1rem;
           outline: none;

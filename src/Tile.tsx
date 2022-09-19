@@ -1,4 +1,3 @@
-import { css } from "@emotion/react";
 import { Stack, Text } from "@specimen/foundation";
 import { ReactNode } from "react";
 import Card from "./Card";

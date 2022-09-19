@@ -1,5 +1,5 @@
 import { BoxProps, Inline } from "@specimen/foundation";
-import { forwardRef, ReactNode, Ref } from "react";
+import { forwardRef, Ref } from "react";
 import Text from "./Text";
 import ButtonBox from "./ButtonBox";
 import Icon, { Icon as IconId } from "./Icon";

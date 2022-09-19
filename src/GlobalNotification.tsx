@@ -1,11 +1,5 @@
 import { css } from "@emotion/react";
-import {
-  Box,
-  Inline,
-  Text,
-  TextProvider,
-  useTheme,
-} from "@specimen/foundation";
+import { Box, Inline, TextProvider, useTheme } from "@specimen/foundation";
 import { ReactNode, useState } from "react";
 import CloseButton from "./CloseButton";
 import Icon from "./Icon";

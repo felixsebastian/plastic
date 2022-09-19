@@ -1,9 +1,7 @@
 import { css } from "@emotion/react";
 import { Box, Inline, Stack, Text, useTheme } from "@specimen/foundation";
 import Avatar from "./Avatar";
-import ButtonBox from "./ButtonBox";
 import Divider from "./Divider";
-import Icon from "./Icon";
 import Levee from "./Levee";
 import Logo from "./Logo";
 import MenuItem from "./MenuItem";

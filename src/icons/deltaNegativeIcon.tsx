@@ -8,7 +8,6 @@ const SvgDeltaNegativeicon = (
     xmlns="http://www.w3.org/2000/svg"
     width={props.size}
     height={props.size}
-    fill="none"
     viewBox="0 0 20 20"
     ref={ref}
     {...props}

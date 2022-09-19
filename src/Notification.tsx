@@ -11,7 +11,6 @@ import CloseButton from "./CloseButton";
 import Icon from "./Icon";
 import moods, { Mood } from "./moods";
 import { Provider as LightOnDarkProvider } from "./lightOnDarkContext";
-import ButtonElement from "./ButtonElement";
 
 interface Props {
   title: string;
@@ -38,7 +37,6 @@ const Notification = ({ title, children, mood = "informative" }: Props) => {
     >
       <LightOnDarkProvider value={false}>
         <Icon id={moods[mood].icon} size="lg" color={moods[mood].iconColor} />
-
         <Inline
           my="sm"
           alignY="center"

@@ -28,7 +28,7 @@
     "src"
   ],
   "exclude": [
-    "node_modules",
-    "lib"
+    "lib",
+    "node_modules/jszip/index.d.ts"
   ]
 }

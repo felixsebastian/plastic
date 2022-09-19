@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { useTheme } from "@specimen/foundation";
+import { useTheme, TShirtSizes } from "@specimen/foundation";
 import { round } from "lodash";
 import * as allIcons from "./icons";
 
@@ -8,7 +8,7 @@ export type Icon = keyof typeof allIcons;
 interface Props {
   id: Icon;
   color?: string;
-  size?: string;
+  size?: TShirtSizes;
   inline?: boolean;
   className?: string;
 }
@@ -20,7 +20,7 @@ const Icon = (props: Props) => {
   return (
     <Icon
       size={round(fontSize(props.size ?? "md").raw * 1.5) + "px"}
-      fill={color(props.color ?? "text").s}
+      fill={color(props.color ?? "text").hex}
       className={props.className}
       css={css`
         display: ${props.inline ? "inline" : "block"};

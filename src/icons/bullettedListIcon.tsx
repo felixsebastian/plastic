@@ -8,7 +8,6 @@ const SvgBullettedListicon = (
     width={props.size}
     height={props.size}
     viewBox="0 0 19 15"
-    fill="none"
     xmlns="http://www.w3.org/2000/svg"
     ref={ref}
     {...props}
