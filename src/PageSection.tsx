@@ -6,7 +6,13 @@ const PageSection = ({ bg, ...props }: any) => {
   const { large } = layout.breakpoints;
 
   return (
-    <Box bg={bg}>
+    <Box
+      bg={bg}
+      d="flex"
+      css={css`
+        justify-content: center;
+      `}
+    >
       <Stack
         gap="lg"
         py="md"
