@@ -8,10 +8,13 @@ import ButtonVariant from "./ButtonVariant";
 
 export interface Props extends BoxProps {
   children: string;
-  icon?: string | ReactNode;
+  icon?: IconId | ReactNode;
   iconPosition?: "left" | "right";
   variant?: ButtonVariant;
 }
+
+const isIcon = (icon: IconId | ReactNode): icon is IconId =>
+  typeof icon === "string";
 
 const Button = (
   { icon, iconPosition = "right", ...props }: Props,
@@ -19,8 +22,8 @@ const Button = (
 ) => {
   const { color, weight } = useButtonStyle(props.variant);
 
-  if (typeof icon === "string") {
-    icon = <Icon color={color} id={icon as IconId} />;
+  if (isIcon(icon)) {
+    icon = <Icon color={color} id={icon} />;
   }
 
   const text = (
@@ -29,20 +32,12 @@ const Button = (
     </Text>
   );
 
+  const content = [icon, text];
+
   return (
     <ButtonBox ref={ref} {...props}>
       <Inline alignY="center" gap="md" h="full">
-        {iconPosition === "left" ? (
-          <>
-            {icon}
-            {text}
-          </>
-        ) : (
-          <>
-            {text}
-            {icon}
-          </>
-        )}
+        {iconPosition === "left" ? content : content.reverse()}
       </Inline>
     </ButtonBox>
   );
