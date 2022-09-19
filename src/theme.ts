@@ -3,74 +3,30 @@ import { stubTrue } from "lodash";
 import { createColor, linearSize, tshirts } from "@specimen/foundation";
 import fontMetricsInter from "@capsizecss/metrics/inter";
 import { flow, cond, isNull, isNumber } from "lodash/fp";
+import { heartTheme } from "@kaizen/design-tokens";
 
 // --layout-breakpoints-medium: 768px;
 // --layout-breakpoints-large: 1080px;
 
-const colors: Record<string, string> = {
-  white: "#ffffff",
-  border: "e1e2ea",
-  favorable: "#7dd5bd",
-  unfavorable: "#e68d97",
+const flattenKeys = (obj: any, result = {}, base = "") => {
+  for (const [k, v] of Object.entries(obj)) {
+    if (typeof v === "object") {
+      result = { ...result, ...flattenKeys(v, result, `${base}${k}`) };
+    } else {
+      result[base + k] = v;
+    }
+  }
 
-  purple100: "#f4edf8",
-  purple200: "#dfc9ea",
-  purple300: "#c9a5dd",
-  purple400: "#ae67b1",
-  purple500: "#844587",
-  purple600: "#5f3361",
-  purple700: "#4a234d",
-  purple800: "#2f2438",
-  blue100: "#e6f6ff",
-  blue200: "#bde2f5",
-  blue300: "#73c0e8",
-  blue400: "#008bd6",
-  blue500: "#0168b3",
-  blue600: "#004970",
-  blue700: "#003157",
-  green100: "#e8f8f4",
-  green200: "#c4ede2",
-  green300: "#8fdbc7",
-  green400: "#5dcbad",
-  green500: "#44a289",
-  green600: "#2c7d67",
-  green700: "#22594a",
-  yellow100: "#fff9e4",
-  yellow200: "#ffeeb3",
-  yellow300: "#ffe36e",
-  yellow400: "#ffca4d",
-  yellow500: "#ffb600",
-  yellow600: "#c68600",
-  yellow700: "#876400",
-  red100: "#fdeaee",
-  red200: "#f9c2cb",
-  red300: "#f597a8",
-  red400: "#e0707d",
-  red500: "#c93b55",
-  red600: "#a82433",
-  red700: "#6c1e20",
-  orange100: "#fff0e8",
-  orange200: "#ffd1b9",
-  orange300: "#ffb08a",
-  orange400: "#ff9461",
-  orange500: "#e96c2f",
-  orange600: "#b74302",
-  orange700: "#903c00",
-  gray100: "#f9f9f9",
-  gray200: "#f4f4f5",
-  gray300: "#eaeaec",
-  gray400: "#cdcdd0",
-  gray500: "#8c8c97",
-  gray600: "#524e56",
+  return result;
 };
 
-// mandatory
-// text: "#2f2438",
-// link: "#0b63ff",
-// outline: "#0168b3",
-colors.text = colors["purple800"];
-colors.link = colors["blue500"];
-colors.outline = colors["blue500"];
+const colors: Record<string, string> = {
+  ...flattenKeys(heartTheme.color),
+  ...heartTheme.dataViz,
+  text: heartTheme.color.purple[800],
+  link: heartTheme.color.blue[500],
+  outline: heartTheme.color.blue[500],
+};
 
 const getColor = (c: keyof typeof colors) => createColor(colors[c] ?? c);
 

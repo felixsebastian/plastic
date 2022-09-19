@@ -1,5 +1,8 @@
 import { css } from "@emotion/react";
 import { Box, Stack, useTheme } from "@specimen/foundation";
+import { heartTheme } from "@kaizen/design-tokens";
+
+const { large } = heartTheme.layout.breakpoints;
 
 const PageSection = ({ bg, ...props }: any) => {
   const { s } = useTheme();
@@ -11,8 +14,8 @@ const PageSection = ({ bg, ...props }: any) => {
         py="md"
         css={css`
           margin: 0 auto;
-          max-width: 1200px;
-          @media screen and (max-width: 1200px) {
+          max-width: ${heartTheme.layout.contentMaxWidth};
+          @media screen and (max-width: ${large}) {
             width: 100%;
             padding: ${s.md};
           }
