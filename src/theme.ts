@@ -1,5 +1,5 @@
 import { createSize } from "@specimen/foundation";
-import { stubTrue } from "lodash";
+import { pick, stubTrue } from "lodash";
 import { createColor, linearSize, tshirts } from "@specimen/foundation";
 import fontMetricsInter from "@capsizecss/metrics/inter";
 import { flow, cond, isNull, isNumber } from "lodash/fp";
@@ -52,7 +52,7 @@ const size = flow(
 const fonts = {
   inter: {
     name: '"Inter", "Noto Sans", Helvetica, Arial, sans-serif',
-    metrics: fontMetricsInter,
+    metrics: fontMetricsInter as any,
   },
 };
 
@@ -84,6 +84,7 @@ const theme = {
   fonts,
   timing,
   animationEasing,
+  ...pick(heartTheme, ["layout"]),
 };
 
 export default theme;
