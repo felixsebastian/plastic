@@ -1,26 +1,22 @@
 import { css } from "@emotion/react";
 import { Box, useTheme } from "@specimen/foundation";
 import { Children } from "react";
+import Column from "./Column";
 
-const Row = ({ children }: any) => {
+const Row = ({ children, gap = "md", simple }: any) => {
   const { s } = useTheme();
 
   return (
     <Box
       d="flex"
       css={css`
-        gap: ${s.md};
+        flex-wrap: nowrap;
+        gap: ${s[gap]};
       `}
     >
-      {Children.map(children, (child) => (
-        <div
-          css={css`
-            flex: 1 0 0;
-          `}
-        >
-          {child}
-        </div>
-      ))}
+      {simple
+        ? Children.map(children, (child) => <Column>{child}</Column>)
+        : children}
     </Box>
   );
 };
