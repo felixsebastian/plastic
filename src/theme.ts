@@ -54,6 +54,18 @@ const fonts = {
     name: '"Inter", "Noto Sans", Helvetica, Arial, sans-serif',
     metrics: fontMetricsInter as any,
   },
+  tiemposHeadline: {
+    name: '"Tiempos Headline", serif',
+    metrics: {
+      familyName: "Tiempos Headline",
+      capHeight: 702,
+      ascent: 783,
+      descent: -217,
+      lineGap: 200,
+      unitsPerEm: 1000,
+      xHeight: 1209,
+    },
+  },
 };
 
 const timing = {
