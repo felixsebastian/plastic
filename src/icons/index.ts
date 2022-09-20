@@ -215,3 +215,4 @@ export { default as User } from "./userIcon";
 export { default as Users } from "./usersIcon";
 export { default as Visible } from "./visibleIcon";
 export { default as Writing } from "./writingIcon";
+export { default as Intelligence } from "./intelligenceIcon";
