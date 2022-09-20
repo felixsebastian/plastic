@@ -3,8 +3,10 @@ const roundDown = (n: number, precision: number) => {
   return Math.floor(n * coeff) / coeff;
 };
 
+const formatPercentage = (n: number) => n * 100 + "%";
+
 const Column = ({ width = "0%", grow = 1, ...props }: any) => {
-  if (typeof width === "number") width = roundDown(width, 5) + "%";
+  if (typeof width === "number") width = formatPercentage(roundDown(width, 5));
 
   return (
     <div

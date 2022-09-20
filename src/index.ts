@@ -38,6 +38,7 @@ export { default as Pulse } from "./Pulse";
 export { default as Radio } from "./Radio";
 export { default as RadioList } from "./RadioList";
 export { default as Row } from "./Row";
+export { default as Column } from "./Column";
 export { default as Select } from "./Select";
 export { default as StatusChip } from "./StatusChip";
 export { default as Tag } from "./Tag";
