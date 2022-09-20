@@ -58,12 +58,12 @@ const fonts = {
     name: '"Tiempos Headline", serif',
     metrics: {
       familyName: "Tiempos Headline",
-      capHeight: 702,
-      ascent: 783,
+      capHeight: 708,
+      ascent: 1028,
       descent: -217,
-      lineGap: 200,
+      lineGap: 0,
       unitsPerEm: 1000,
-      xHeight: 1209,
+      xHeight: 0,
     },
   },
 };
