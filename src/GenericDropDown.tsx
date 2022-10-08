@@ -12,7 +12,7 @@ import {
   useRef,
   useState,
 } from "react";
-import { mergeRefs } from "react-merge-refs";
+import mergeRefs from "./mergeRefs";
 import { usePopper } from "react-popper";
 
 const useOnClickOutside = (

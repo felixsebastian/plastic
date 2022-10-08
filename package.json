@@ -1,6 +1,6 @@
 {
   "name": "koan-design",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "Koan design system",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -60,7 +60,6 @@
     "lottie-web": "^5.9.6",
     "nanoid": "^3.3.4",
     "react-day-picker": "^8.2.0",
-    "react-merge-refs": "^2.0.1",
     "react-popper": "^2.3.0",
     "react-select": "^5.4.0"
   }
