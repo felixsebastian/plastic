@@ -1,6 +1,6 @@
 {
   "name": "koan-design",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "description": "Koan design system",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
