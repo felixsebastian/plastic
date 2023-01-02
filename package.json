@@ -1,6 +1,6 @@
 {
   "name": "kliq",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Kliq Component Library",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
