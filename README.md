@@ -1,8 +1,8 @@
-# Koan Design System
+# Kliq Component Library
 
 ## Getting started
-Install Koan with `npm install koan-design` or `yarn add koan-design`.
+Install Kliq with `npm install kliq` or `yarn add kliq`.
 
-After installing, add the `KoanProvider` somewhere near the root of your app.
+After installing, add the `KliqProvider` somewhere near the root of your app.
 
-More documentation can be found [here](https://koan-design-docs.vercel.app/).
+More documentation can be found [here](https://kliq-design-docs.vercel.app/).

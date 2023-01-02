@@ -19,7 +19,7 @@ export { default as GenericDropDown } from "./GenericDropDown";
 export { default as GlobalNotification } from "./GlobalNotification";
 export { default as Icon } from "./Icon";
 export { default as IconButton } from "./IconButton";
-export { default as KoanProvider } from "./KoanProvider";
+export { default as KliqProvider } from "./KliqProvider";
 export { default as Levee } from "./Levee";
 export {
   default as lightOnDarkContext,

@@ -1,7 +1,7 @@
 {
-  "name": "koan-design",
-  "version": "1.6.0",
-  "description": "Koan design system",
+  "name": "kliq",
+  "version": "1.0.0",
+  "description": "Kliq Component Library",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/felixsebastian/koan.git"
+    "url": "https://github.com/felixsebastian/kliq.git"
   },
   "author": "Felix Sebastian",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/felixsebastian/koan/issues"
+    "url": "https://github.com/felixsebastian/kliq/issues"
   },
   "devDependencies": {
     "@types/node": "^18.7.18",

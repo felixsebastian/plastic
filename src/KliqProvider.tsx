@@ -19,11 +19,11 @@ const GlobalCss = () => (
   </>
 );
 
-const KoanProvider = (props: Props) => (
+const KliqProvider = (props: Props) => (
   <SpecimenProvider theme={theme}>
     <GlobalCss />
     {props.children}
   </SpecimenProvider>
 );
 
-export default KoanProvider;
+export default KliqProvider;
