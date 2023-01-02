@@ -1,4 +1,5 @@
 # Kliq Component Library
 
 - [Docs](https://kliq-docs.vercel.app/) 📄
-- [NPM Package](https://www.npmjs.com/package/kliq) 📦
+- [GitHub](https://github.com/felixsebastian/kliq) :octocat:
+- [NPM](https://www.npmjs.com/package/kliq) 📦
