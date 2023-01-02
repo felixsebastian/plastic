@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { useTheme, TShirtSizes } from "@specimen/foundation";
+import { useTheme, TShirtSizes, useIsInline } from "@specimen/foundation";
 import { round } from "lodash";
 import * as allIcons from "./icons";
 
@@ -16,6 +16,8 @@ interface Props {
 const Icon = (props: Props) => {
   const { color, fontSize } = useTheme();
   const Icon = allIcons[props.id];
+  const isInline = useIsInline();
+  const inline = props.inline ?? isInline;
 
   return (
     <Icon
@@ -23,7 +25,7 @@ const Icon = (props: Props) => {
       fill={color(props.color ?? "text").hex}
       className={props.className}
       css={css`
-        display: ${props.inline ? "inline" : "block"};
+        display: ${inline ? "inline" : "block"};
       `}
     />
   );
