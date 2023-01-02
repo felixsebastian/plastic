@@ -9,7 +9,7 @@ import { Box, BoxProps } from "@specimen/foundation";
 
 export interface AnimatedBaseProps
   extends BaseProps,
-    Omit<BoxProps, "alt" | "name"> {
+  Omit<BoxProps, "alt" | "name"> {
   autoplay?: boolean;
   loop?: boolean;
   aspectRatio?: AspectRatioType;
@@ -85,7 +85,9 @@ export const AnimatedBase = ({
     </svg>
   );
 
-  const FailedState = <Box as="img" src={getAssetUrl(fallback)} alt={alt} />;
+  const FailedState = (
+    <Box as="img" htmlAttributes={{ alt, src: getAssetUrl(fallback) }} />
+  );
 
   return (
     <AspectRatio {...props} type={aspectRatio}>

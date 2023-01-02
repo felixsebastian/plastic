@@ -1,5 +1,11 @@
 import { css } from "@emotion/react";
-import { Box, Inline, Text, TextStyle, useTheme } from "@specimen/foundation";
+import {
+  Box,
+  Inline,
+  Text,
+  TextInlineStyle,
+  useTheme,
+} from "@specimen/foundation";
 import Icon from "./Icon";
 import { nanoid } from "nanoid";
 
@@ -11,7 +17,7 @@ const Control = ({ state, ...props }: any) => {
       aria-hidden="true"
       handleClick={props.handleClick}
       as="button"
-      type="button"
+      htmlAttributes={{ type: "button" }}
       bg="white"
       radius="xl"
       d="flex"
@@ -49,7 +55,7 @@ const Control = ({ state, ...props }: any) => {
 export interface Props {
   state: boolean;
   label: string;
-  labelProps?: TextStyle;
+  labelProps?: TextInlineStyle;
 }
 
 const Radio = ({ state, label, ...props }: any) => {

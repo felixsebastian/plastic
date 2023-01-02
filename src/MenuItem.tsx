@@ -35,11 +35,11 @@ const MenuItem = ({ icon, destructive, children, ...props }: Props) => {
       p="sm"
       pl={icon ? "sm" : "md"}
       variant="ghost"
-      role="menuitem"
       className="button-box"
       w="full"
       h={undefined}
       {...props}
+      htmlAttributes={{ role: "menuitem", ...props.htmlAttributes }}
       css={css`
         justify-content: flex-start;
         &:hover {

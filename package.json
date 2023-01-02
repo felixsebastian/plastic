@@ -50,7 +50,7 @@
     "@emotion/styled": "^11.8.1",
     "@kaizen/design-tokens": "^10.0.2",
     "@popperjs/core": "^2.11.6",
-    "@specimen/foundation": "1.2",
+    "@specimen/foundation": "^2.0.4",
     "@types/lodash": "^4.14.184",
     "date-fns": "^2.29.2",
     "eslint": "^8.23.0",
@@ -59,6 +59,7 @@
     "lodash": "^4.17.21",
     "lottie-web": "^5.9.6",
     "nanoid": "^3.3.4",
+    "npm": "^9.2.0",
     "react-day-picker": "^8.2.0",
     "react-popper": "^2.3.0",
     "react-select": "^5.4.0"

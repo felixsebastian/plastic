@@ -12,12 +12,12 @@ const Control = ({ state, ...props }: any) => {
       aria-hidden="true"
       handleClick={toggle}
       as="button"
-      type="button"
       bg={state === "OFF" ? "white" : "gray500"}
       radius="sm"
       d="flex"
       w="lg"
       h="lg"
+      htmlAttributes={{ type: "button" }}
       css={css(
         css`
           padding: 0;
@@ -35,7 +35,7 @@ const Control = ({ state, ...props }: any) => {
           }
         `,
         state !== "OFF" &&
-          css`
+        css`
             &:hover {
               background: ${c.purple800};
             }

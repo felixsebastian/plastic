@@ -12,7 +12,13 @@ const ButtonElement = (props: Props, ref: Ref<HTMLElement>) => {
   const outline = useOutlineCss(lod);
 
   return (
-    <Box ref={ref} as="button" type="button" css={outline} {...props}>
+    <Box
+      ref={ref}
+      as="button"
+      css={outline}
+      {...props}
+      htmlAttributes={{ type: "button", ...props.htmlAttributes }}
+    >
       {props.children}
     </Box>
   );

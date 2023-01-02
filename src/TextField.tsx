@@ -146,15 +146,18 @@ const TextField = ({
       />
       <Box
         as="input"
-        id={id}
-        type="text"
         bg={lod ? "transparent" : "white"}
         radius="sm"
         p="md"
         w="full"
         h="2xl"
-        disabled={disabled}
         {...props}
+        htmlAttributes={{
+          id,
+          disabled,
+          type: "text",
+          ...props.htmlAttributes,
+        }}
         className={`${props.className} ${lod ? " lod" : ""}`}
         css={css`
           display: block;
@@ -181,7 +184,7 @@ const TextField = ({
         size="sm"
         weight="semiBold"
         as="label"
-        htmlFor={id}
+        htmlAttributes={{ htmlFor: id }}
       >
         {label}
       </Text>

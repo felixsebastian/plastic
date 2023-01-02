@@ -14,9 +14,12 @@ export const Base = ({ name, alt, aspectRatio, ...props }: BaseProps) => {
       as="img"
       w="full"
       m="none"
-      alt={alt}
       {...props}
-      src={getAssetUrl(name)}
+      htmlAttributes={{
+        alt,
+        src: getAssetUrl(name),
+        ...props.htmlAttributes,
+      }}
     />
   );
 
