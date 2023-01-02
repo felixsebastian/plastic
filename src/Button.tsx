@@ -1,17 +1,14 @@
-import { BoxProps, Inline } from "@specimen/foundation";
+import { Inline } from "@specimen/foundation";
 import { forwardRef, Ref } from "react";
 import Text from "./Text";
-import ButtonBox from "./ButtonBox";
+import ButtonBox, { ButtonBoxProps } from "./ButtonBox";
 import Icon, { Icon as IconId } from "./Icon";
 import useButtonStyle from "./useButtonStyle";
-import ButtonVariant from "./ButtonVariant";
 
-export interface Props extends BoxProps {
-  children: string;
+export type Props = ButtonBoxProps & {
   icon?: IconId;
   iconPosition?: "left" | "right";
-  variant?: ButtonVariant;
-}
+};
 
 const Button = (
   { icon, iconPosition = "left", ...props }: Props,
@@ -20,7 +17,7 @@ const Button = (
   const { color, weight } = useButtonStyle(props.variant);
 
   const text = (
-    <Text color={color} weight={weight}>
+    <Text as="div" color={color} weight={weight}>
       {props.children}
     </Text>
   );

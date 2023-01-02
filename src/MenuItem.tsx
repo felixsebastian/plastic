@@ -1,17 +1,22 @@
 import { css } from "@emotion/react";
 import { Box, Text, useTheme } from "@specimen/foundation";
 import { ReactNode } from "react";
-import ButtonBox, { Props as ButtonBoxProps } from "./ButtonBox";
+import ButtonBox, { NonLinkProps } from "./ButtonBox";
 import Icon, { Icon as IconType } from "./Icon";
 import Levee from "./Levee";
 
-interface Props extends ButtonBoxProps {
+interface Props {
   icon?: IconType;
   children: ReactNode;
   destructive?: boolean;
 }
 
-const MenuItem = ({ icon, destructive, children, ...props }: Props) => {
+const MenuItem = ({
+  icon,
+  destructive,
+  children,
+  ...props
+}: Props & NonLinkProps) => {
   const { c } = useTheme();
 
   const text = (

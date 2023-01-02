@@ -1,7 +1,7 @@
-import { css } from "@emotion/react";
+import { css, PropsOf } from "@emotion/react";
 import { Box, Stack, useTheme } from "@specimen/foundation";
 
-const PageSection = ({ bg, ...props }: any) => {
+const PageSection = ({ bg, ...props }: PropsOf<typeof Stack>) => {
   const { s, layout } = useTheme();
   const { large } = layout.breakpoints;
 

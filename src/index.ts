@@ -13,6 +13,7 @@ export { default as Chip } from "./Chip";
 export { default as CloseButton } from "./CloseButton";
 export { default as DatePicker } from "./DatePicker";
 export { default as Divider } from "./Divider";
+export { default as Dot } from "./Dot";
 export { default as FilterMenu } from "./FilterMenu";
 export { default as GenericDropDown } from "./GenericDropDown";
 export { default as GlobalNotification } from "./GlobalNotification";
