@@ -19,11 +19,11 @@ const GlobalCss = () => (
   </>
 );
 
-const KliqProvider = (props: Props) => (
+const PlasticProvider = (props: Props) => (
   <SpecimenProvider theme={theme}>
     <GlobalCss />
     {props.children}
   </SpecimenProvider>
 );
 
-export default KliqProvider;
+export default PlasticProvider;

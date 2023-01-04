@@ -1,7 +1,7 @@
 {
-  "name": "kliq",
+  "name": "plastic",
   "version": "1.0.3",
-  "description": "Kliq Component Library",
+  "description": "Plastic Component Library",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/felixsebastian/kliq.git"
+    "url": "https://github.com/felixsebastian/plastic.git"
   },
   "author": "Felix Sebastian",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/felixsebastian/kliq/issues"
+    "url": "https://github.com/felixsebastian/plastic/issues"
   },
   "devDependencies": {
     "@types/node": "^18.7.18",

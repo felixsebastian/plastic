@@ -1,5 +1,5 @@
-# Kliq Component Library
+# Plastic Component Library
 
-- [Docs](https://kliq-docs.vercel.app/) 📄
-- [GitHub](https://github.com/felixsebastian/kliq) :octocat:
-- [npm](https://www.npmjs.com/package/kliq) 📦
+- [Docs](https://plastic-docs.vercel.app/) 📄
+- [GitHub](https://github.com/felixsebastian/plastic) :octocat:
+- [npm](https://www.npmjs.com/package/plastic) 📦
