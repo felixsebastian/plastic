@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
-import { Box, useTheme } from "@specimen/foundation";
-import { Children } from "react";
+import { Box, TShirtSizes, useTheme } from "@specimen/foundation";
+import { Children, createContext } from "react";
 import Column from "./Column";
 
 const alignments = {
@@ -9,6 +9,10 @@ const alignments = {
   center: "center",
 };
 
+const context = createContext<TShirtSizes>("md");
+const Provider = context.Provider;
+export const gapContext = context;
+
 const Row = ({
   children,
   gap = "md",
@@ -16,21 +20,26 @@ const Row = ({
   alignY = "top",
   ...props
 }: any) => {
-  const { s } = useTheme();
+  const { size } = useTheme();
 
   return (
     <Box
       d="flex"
       css={css`
-        gap: ${s[gap]};
+        box-sizing: border-box;
         align-items: ${alignments[alignY]};
         flex-wrap: nowrap;
+        margin: 0 -${size(gap).raw / 2}px;
       `}
       {...props}
     >
-      {simple
-        ? Children.map(children, (child) => <Column>{child}</Column>)
-        : children}
+      <Provider value={gap}>
+        {simple
+          ? Children.map(children, (child) => (
+              <Column width="expand">{child}</Column>
+            ))
+          : children}
+      </Provider>
     </Box>
   );
 };

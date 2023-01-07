@@ -13,9 +13,10 @@ import useSelectStyles, { Variant } from "./useSelectStyles";
 import ButtonElement from "./ButtonElement";
 import { createContext, forwardRef, Ref, useContext } from "react";
 
-interface Props extends ReactSelectProps {
+interface Props extends Omit<ReactSelectProps, "onChange"> {
   width?: string;
   variant?: Variant;
+  handleChange?: ReactSelectProps["onChange"];
 }
 
 const variantIconColors: Record<Variant, string> = {
@@ -100,6 +101,7 @@ const Select = (props: Props, ref: Ref<any>) => {
           }}
           isSearchable={false}
           {...props}
+          onChange={props.handleChange}
         />
       </div>
     </VariantProvider>
