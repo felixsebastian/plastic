@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgListViewicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -19,11 +23,7 @@ const SvgListViewicon = (
         id="list-view_icon_svg__a"
       />
     </defs>
-    <use
-      fill={props.fill}
-      xlinkHref="#list-view_icon_svg__a"
-      fillRule="evenodd"
-    />
+    <use fill={fill} xlinkHref="#list-view_icon_svg__a" fillRule="evenodd" />
   </svg>
 );
 

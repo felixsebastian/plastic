@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgTextAnalyticsWhiteicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,7 +24,7 @@ const SvgTextAnalyticsWhiteicon = (
       />
     </defs>
     <g transform="translate(2 2)" fill="none" fillRule="evenodd">
-      <use fill={props.fill} xlinkHref="#text-analytics-white_icon_svg__a" />
+      <use fill={fill} xlinkHref="#text-analytics-white_icon_svg__a" />
       <circle fill="#FFF" cx={6} cy={5} r={3} />
       <circle fill="#FFF" cx={12} cy={6} r={2} />
       <circle fill="#FFF" cx={8.5} cy={10.5} r={1.5} />

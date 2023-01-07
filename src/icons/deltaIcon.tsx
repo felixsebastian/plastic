@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgDeltaicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -21,7 +25,7 @@ const SvgDeltaicon = (
     </defs>
     <g fill="none" fillRule="evenodd">
       <circle cx={10} cy={10} r={7} />
-      <use fill={props.fill} xlinkHref="#delta_icon_svg__a" />
+      <use fill={fill} xlinkHref="#delta_icon_svg__a" />
     </g>
   </svg>
 );

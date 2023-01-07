@@ -5,15 +5,15 @@ const intelligenceYellow = "#ffce1e";
 const intelligencePurple = "#727193";
 
 const Intelligenceicon = (
-  props: SVGProps<SVGSVGElement> & { size: string },
+  { size, ...props }: SVGProps<SVGSVGElement> & { size: string },
   ref: Ref<SVGSVGElement>
 ) => {
   const { c } = useTheme();
 
   return (
     <svg
-      width={props.size}
-      height={props.size}
+      width={size}
+      height={size}
       viewBox="0 0 56 56"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"

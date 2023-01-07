@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgHeatmapWhiteicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,7 +24,7 @@ const SvgHeatmapWhiteicon = (
       />
     </defs>
     <g fill="none" fillRule="evenodd">
-      <use fill={props.fill} xlinkHref="#heatmap-white_icon_svg__a" />
+      <use fill={fill} xlinkHref="#heatmap-white_icon_svg__a" />
       <path
         d="M9.748 16.469c-1.548 0-2.793-1.19-2.793-2.65 0-1.368.896-2.33 2.436-2.633 1.54-.305 3.132-1.021 4.02-2.177.339 1.087.504 2.235.504 3.408 0 2.228-1.861 4.052-4.167 4.052"
         fill="#FFF"

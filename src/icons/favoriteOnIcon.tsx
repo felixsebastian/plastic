@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgFavoriteOnicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -19,11 +23,7 @@ const SvgFavoriteOnicon = (
         id="favorite-on_icon_svg__a"
       />
     </defs>
-    <use
-      fill={props.fill}
-      fillRule="nonzero"
-      xlinkHref="#favorite-on_icon_svg__a"
-    />
+    <use fill={fill} fillRule="nonzero" xlinkHref="#favorite-on_icon_svg__a" />
   </svg>
 );
 

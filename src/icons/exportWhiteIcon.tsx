@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgExportWhiteicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,7 +24,7 @@ const SvgExportWhiteicon = (
       />
     </defs>
     <g fill="none" fillRule="evenodd">
-      <use fill={props.fill} xlinkHref="#export-white_icon_svg__a" />
+      <use fill={fill} xlinkHref="#export-white_icon_svg__a" />
       <path
         fill="#FFF"
         d="m13.962 10.794-3.96 3.959-3.959-3.96H8.42V7.627h3.167v3.168z"

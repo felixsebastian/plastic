@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgActionOffWhiteicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,7 +24,7 @@ const SvgActionOffWhiteicon = (
       />
     </defs>
     <g fill="none" fillRule="evenodd">
-      <use fill={props.fill} xlinkHref="#action-off-white_icon_svg__a" />
+      <use fill={fill} xlinkHref="#action-off-white_icon_svg__a" />
       <path
         fill="#FFF"
         d="m8.857 2.385 2.776.01-1.207 2.882-.8 1.909h4.243l-3.652 6.2.151-2.992.076-1.49-1.512.04-3.055.084z"

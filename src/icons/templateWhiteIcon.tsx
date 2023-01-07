@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgTemplateWhiteicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,7 +24,7 @@ const SvgTemplateWhiteicon = (
       />
     </defs>
     <g fill="none" fillRule="evenodd">
-      <use fill={props.fill} xlinkHref="#template-white_icon_svg__a" />
+      <use fill={fill} xlinkHref="#template-white_icon_svg__a" />
       <path
         fill="#FFF"
         d="M12.005 11.273h1.455V9.818h-1.455zM9.288 11.273h1.454V9.818H9.288zM6.543 11.273h1.455V9.818H6.543z"

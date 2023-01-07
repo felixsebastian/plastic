@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgDateStartWhiteicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,9 +24,9 @@ const SvgDateStartWhiteicon = (
       />
     </defs>
     <g fill="none" fillRule="evenodd">
-      <use fill={props.fill} xlinkHref="#date-start-white_icon_svg__a" />
+      <use fill={fill} xlinkHref="#date-start-white_icon_svg__a" />
       <path fill="#FFF" d="M16.224 17.113H3.778V7.334h12.446z" />
-      <path fill={props.fill} d="M5.556 9.112h4.445v4.445H5.556z" />
+      <path fill={fill} d="M5.556 9.112h4.445v4.445H5.556z" />
     </g>
   </svg>
 );

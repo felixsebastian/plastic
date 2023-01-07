@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgDraftWhiteicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,7 +24,7 @@ const SvgDraftWhiteicon = (
       />
     </defs>
     <g fill="none" fillRule="evenodd">
-      <use fill={props.fill} xlinkHref="#draft-white_icon_svg__a" />
+      <use fill={fill} xlinkHref="#draft-white_icon_svg__a" />
       <path
         fill="#FFF"
         d="m11.15 8.8-4.813 4.443v1.666h1.805l4.813-4.443zM13.255 7.487a.511.511 0 0 0-.682 0l-.942.87 1.806 1.665.941-.869a.421.421 0 0 0 0-.628l-1.123-1.038Z"

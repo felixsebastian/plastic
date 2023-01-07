@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgDeltaWhiteicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,9 +24,9 @@ const SvgDeltaWhiteicon = (
       />
     </defs>
     <g fill="none">
-      <use fill={props.fill} xlinkHref="#delta-white_icon_svg__a" />
-      <path fill={props.fill} d="m10 5.37-5.018 8.028h10.036z" />
-      <path fill={props.fill} d="M12.131 11.771H7.87L10 8.36z" />
+      <use fill={fill} xlinkHref="#delta-white_icon_svg__a" />
+      <path fill={fill} d="m10 5.37-5.018 8.028h10.036z" />
+      <path fill={fill} d="M12.131 11.771H7.87L10 8.36z" />
     </g>
   </svg>
 );

@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgEngagementWhiteicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,7 +24,7 @@ const SvgEngagementWhiteicon = (
       />
     </defs>
     <g fill="none" fillRule="evenodd">
-      <use fill={props.fill} xlinkHref="#engagement-white_icon_svg__a" />
+      <use fill={fill} xlinkHref="#engagement-white_icon_svg__a" />
       <path
         d="m12.037 16.167-.374-.34c-1.326-1.203-2.203-1.997-2.203-2.971 0-.794.624-1.418 1.417-1.418.449 0 .879.209 1.16.539.28-.33.71-.539 1.16-.539.793 0 1.417.624 1.417 1.418 0 .974-.876 1.768-2.204 2.973l-.373.338Z"
         fill="#FFF"

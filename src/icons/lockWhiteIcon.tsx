@@ -1,12 +1,16 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgLockWhiteicon = (
-  props: SVGProps<SVGSVGElement> & { fill: string; size: string },
+  {
+    fill,
+    size,
+    ...props
+  }: SVGProps<SVGSVGElement> & { fill: string; size: string },
   ref: Ref<SVGSVGElement>
 ) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,11 +24,7 @@ const SvgLockWhiteicon = (
       />
     </defs>
     <g fill="none" fillRule="evenodd">
-      <use
-        fill={props.fill}
-        fillRule="nonzero"
-        xlinkHref="#lock-white_icon_svg__a"
-      />
+      <use fill={fill} fillRule="nonzero" xlinkHref="#lock-white_icon_svg__a" />
       <path
         d="M10.095 14.19a1.528 1.528 0 0 1-1.524-1.523c0-.838.686-1.524 1.524-1.524s1.524.686 1.524 1.524-.686 1.523-1.524 1.523Z"
         fill="#FFF"
