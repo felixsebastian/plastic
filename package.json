@@ -1,6 +1,6 @@
 {
   "name": "plastic",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Plastic Component Library",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -50,7 +50,7 @@
     "@emotion/styled": "^11.8.1",
     "@kaizen/design-tokens": "^10.0.2",
     "@popperjs/core": "^2.11.6",
-    "@specimen/foundation": "^2.2.1",
+    "@specimen/foundation": "^2.2.2",
     "@types/lodash": "^4.14.184",
     "date-fns": "^2.29.2",
     "eslint": "^8.23.0",
