@@ -1,5 +1,4 @@
 export * from "@specimen/foundation";
-
 export { default as Levee } from "./Levee";
 export {
   default as lightOnDarkContext,
@@ -35,13 +34,11 @@ export { default as NavMenu } from "./NavMenu";
 export { default as Notification } from "./Notification";
 export { default as OverviewCard } from "./OverviewCard";
 export { default as PageSection } from "./PageSection";
-export { default as Column } from "./Column";
 export { default as Tag } from "./Tag";
 export { default as StatusChip } from "./StatusChip";
 export { default as theme } from "./theme";
 export { default as Text } from "./Text";
 export { default as Pulse } from "./Pulse";
-export { default as Row } from "./Row";
 export { default as TextArea } from "./TextArea";
 export { default as TextField } from "./TextField";
 export { default as useLightOnDark } from "./useLightOnDark";
