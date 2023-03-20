@@ -6,6 +6,7 @@ import useLightOnDark from "./useLightOnDark";
 import { Provider as LodProvider } from "./lightOnDarkContext";
 import { getOutlineBoxProps } from "./useOutlineCss";
 import Icon from "./Icon";
+import { ChangeEvent } from "react";
 
 type State = "normal" | "positive" | "negative" | "cautionary";
 
@@ -92,6 +93,8 @@ interface MessageProps {
 interface StaticProps extends BoxProps {
   label?: string;
   hint?: string;
+  value?: string;
+  handleChange?: (value: string) => void;
 }
 
 type Props = StaticProps & (MessageProps | NoMessageProps);
@@ -156,6 +159,9 @@ const TextField = ({
           id,
           disabled,
           type: "text",
+          value: props.value,
+          onChange: (e: ChangeEvent<HTMLInputElement>) =>
+            props.handleChange?.(e.target.value),
           ...props.htmlAttributes,
         }}
         className={`${props.className} ${lod ? " lod" : ""}`}
