@@ -166,6 +166,7 @@ const TextField = ({
         }}
         className={`${props.className} ${lod ? " lod" : ""}`}
         css={css`
+          position: relative;
           display: block;
           color: ${c[lod ? "white" : "text"]};
           border: none;
