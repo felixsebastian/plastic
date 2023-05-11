@@ -67,6 +67,7 @@ const ButtonBox = (props: Props, ref: Ref<HTMLElement>) => {
           href: props.to,
           target: props.newWindow ? "_blank" : undefined,
         }}
+        {...commonProps}
         css={css(
           baseCss,
           outline,
@@ -74,7 +75,7 @@ const ButtonBox = (props: Props, ref: Ref<HTMLElement>) => {
             cursor: pointer;
           `
         )}
-        {...commonProps}
+        {...props}
       />
     );
   } else {
