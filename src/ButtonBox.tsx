@@ -9,7 +9,7 @@ import useLightOnDark from "./useLightOnDark";
 import useOutlineCss from "./useOutlineCss";
 import WithChildren from "./WithChildren";
 
-interface AsLinkProps {
+interface AsLinkProps extends Omit<BoxProps, "htmlAttributes" | "as"> {
   asLink: true;
   to: string;
   newWindow?: boolean;

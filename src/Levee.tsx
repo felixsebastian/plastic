@@ -9,6 +9,8 @@ const Levee = ({ anchor = "top", ...props }: any) => {
     <div
       css={css`
         flex: 1 0 0;
+        min-width: 0;
+        min-height: 0;
       `}
     >
       {props.tail}
