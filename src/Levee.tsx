@@ -21,6 +21,8 @@ const Levee = ({ anchor = "top", ...props }: any) => {
     <div
       css={css`
         flex: 0 0 auto;
+        min-width: 0;
+        min-height: 0;
       `}
     >
       {props.head}
