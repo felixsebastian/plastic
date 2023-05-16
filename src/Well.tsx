@@ -2,7 +2,14 @@ import { css } from "@emotion/react";
 import { Box, BoxProps, useTheme } from "@specimen/foundation";
 import { forwardRef, ReactNode, Ref } from "react";
 
-export type Color = "blue" | "green" | "yellow" | "red" | "orange" | "purple";
+export type Color =
+  | "gray"
+  | "blue"
+  | "green"
+  | "yellow"
+  | "red"
+  | "orange"
+  | "purple";
 
 interface Props extends BoxProps {
   children?: ReactNode;
