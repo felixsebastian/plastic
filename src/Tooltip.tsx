@@ -13,6 +13,7 @@ interface Props {
   children: ReactElement;
   color?: WellColor;
   placement?: Placement;
+  wrap?: boolean;
 }
 
 const opposites: Record<Placement, Placement> = {
@@ -29,7 +30,7 @@ const arrowRotations: Record<Placement, string> = {
   right: "45deg",
 };
 
-const Tooltip = ({ color = "blue", ...props }: Props) => {
+const Tooltip = ({ color = "blue", wrap = true, ...props }: Props) => {
   const { c, s, size } = useTheme();
   const [referenceElement, setReferenceElement] = useState<HTMLElement>();
   const [popperElement, setPopperElement] = useState<HTMLElement | null>(null);
@@ -98,7 +99,11 @@ const Tooltip = ({ color = "blue", ...props }: Props) => {
         )}
         {...attributes.popper}
       >
-        <Text size="sm" weight="medium">
+        <Text
+          size="sm"
+          weight="medium"
+          css={css({ whiteSpace: wrap ? "normal" : "nowrap" })}
+        >
           {props.text}
         </Text>
         <div
