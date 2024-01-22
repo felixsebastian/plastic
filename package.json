@@ -1,6 +1,6 @@
 {
   "name": "plastic",
-  "version": "1.4.3",
+  "version": "1.5.3",
   "description": "Plastic Component Library",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",

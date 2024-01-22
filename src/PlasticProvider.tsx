@@ -9,6 +9,7 @@ import theme from "./theme";
 interface Props {
   children?: ReactNode;
   navigationFn?: (path: string) => void
+  cssReset?: boolean
 }
 
 const GlobalCss = () => (
@@ -21,7 +22,7 @@ const GlobalCss = () => (
 );
 
 const PlasticProvider = (props: Props) => (
-  <SpecimenProvider theme={theme} navigationFn={props.navigationFn}>
+  <SpecimenProvider theme={theme} navigationFn={props.navigationFn} cssReset={props.cssReset}>
     <GlobalCss />
     {props.children}
   </SpecimenProvider>
